@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Ghost.Models.SLV_VW_GERE_PROCESSOS>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SG_TP_PESSOA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CD_OP_SOLVERE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_PESSOA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CD_CAUSA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NR_PROCESSO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NR_CONTRATO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_ESCRITORIO_COBRANCA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IC_STATUS_PROCESSUAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IC_STATUS_OPERACIONAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_PRODUTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DT_CONTRATO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DT_VENC_DESDE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NM_GRUPO_ECONOMICO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CD_CARTEIRA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VL_SALDO_CONTABIL_DEVEDOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VL_SALDO_GERENCIAL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SG_TP_PESSOA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CD_OP_SOLVERE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_PESSOA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CD_CAUSA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NR_PROCESSO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NR_CONTRATO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_ESCRITORIO_COBRANCA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IC_STATUS_PROCESSUAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IC_STATUS_OPERACIONAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_PRODUTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT_CONTRATO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DT_VENC_DESDE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NM_GRUPO_ECONOMICO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CD_CARTEIRA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VL_SALDO_CONTABIL_DEVEDOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VL_SALDO_GERENCIAL)
+        </td>
+    </tr>
+}
+
+</table>
